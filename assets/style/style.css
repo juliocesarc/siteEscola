@@ -6,42 +6,22 @@ body {
     margin: 0;
 }
 
-:root {
-    --cor1: blue;
-    --cor2: orange;
-    --cor3: yellow;
-    --cor4: black;
-    --cor5: white;
-}
-
 header {
     margin: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: lightgray;
+    background-color: #ccc;
 }
 
-.header {
-    background-color: var(--cor1);
-    height: 50px;
+nav {
+    height: 40px;
+    background-color: blue;
 }
 
-.slider{
+.slider {
     flex: 1;
     overflow: hidden;
-}
-.slider--width {
-    height: 100%;
-    display: flex;
-    transition: all ease 0.3s;
-}
-
-.slider--item {
-    width: 100vw;
-    height: inherit;
-    background-position: center;
-    background-size: cover;
 }
 
 .slider--controls {
@@ -56,7 +36,21 @@ header {
 .slider--control {
     width: 50px;
     height: 50px;
-    background-color: var(--cor5);
+    background-color: white;
+    border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+}
+
+.slider--width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.5s;
+}
+
+.slider--item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
 }
