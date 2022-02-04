@@ -7,6 +7,27 @@ body {
     margin: 0;
 }
 
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+section {
+    display: block;
+}
+
 header {
     margin: 0;
     display: flex;
@@ -56,6 +77,76 @@ nav {
     background-size: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-sobre {
+    display: flex;
+}
+
+.section-sobre .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.section-sobre .sobre {
+    position: relative;
+    width: 70%;
+    padding: 0px 50px 0px 0px;
+}
+
+.section_sobre .sobre_img {
+    margin-top: 100px;
+    width: 100%;
+    position: relative;
+    max-width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     width: 100%;
     min-height: 250px;
@@ -65,7 +156,7 @@ footer {
 }
 
 footer .boxs {
-    width: 320px;
+    width: 380px;
     min-height: 150px;
     padding: 20px;
 }
@@ -91,6 +182,7 @@ footer .boxs:nth-child(4) {
 
 .boxs ul li a:hover {
     color: #fff;
+    text-shadow: 1px 1px 5px rgb(131, 131, 131);
 }
 
 .boxs p {
@@ -110,6 +202,15 @@ footer .boxs:nth-child(4) {
 
 .footer h2 {
     color: #fff;
+}
+
+.footer h3 {
+    color: #fff;
+}
+
+.footer h3 a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .footer .sociais {
@@ -161,5 +262,36 @@ footer .boxs:nth-child(4) {
 
     footer .boxs:nth-child(4) {
         width: 100%;
+    }
+
+    .footer h3 {
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
     }
 }
