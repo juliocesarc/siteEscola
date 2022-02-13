@@ -58,21 +58,11 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 
+#########################
+## Aqui acaba o slider ##
+#########################
+*/
 
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -164,6 +154,7 @@ p {
 }
 
 .botoes {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
@@ -171,16 +162,32 @@ p {
 }
 
 .botoes button {
+    max-width: 250px;
+    height: 50px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
-    background-color: rgb(255, 196, 0);
-    padding: 15px;
+    background-color: yellow;
+    padding: 0px 10px;
     border-radius: 5px;
     border: none;
     margin-top: 40px;
     cursor: pointer;
     color: blue;
+    transition: 0.7s;
+}
+
+.botoes a {
+    height: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background-color: yellow;
+    padding: 0px 10px;
+    border-radius: 5px;
+    margin: 40px 0px 0px 10px;
+    color: blue;
+    text-decoration: none;
     transition: 0.7s;
 }
 
@@ -190,27 +197,226 @@ p {
     text-decoration: underline;
 }
 
-.botoes a {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    background-color: orange;
-    padding: 15px;
-    border-radius: 5px;
-    margin: 40px 0px 0px 10px;
-    color: blue;
-    text-decoration: none;
-    transition: 0.7s;
+.ensino_infantil {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
 }
 
+.ensino_infantil .nivel_ensino_title {
+    font-size: 27px;
+    color: #002D4E;
+    text-align: center;
+}
 
+.ensino_infantil .nivel_ensino_title .title_infantil {
+    margin-bottom: 20px;
+}
 
+.ensino_infantil .nivel_ensino_title .title_infantil h1 {
+    font-family: 'adelle_sans', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 50%;
+}
 
+.ensino_infantil .nivel_ensino_title .title_infantil h1 p{
+    margin: 0;
+    display: inline-block;
+    font-size: 20px;
+}
 
+.ensino_infantil .nivel_ensino_title .title_infantil h1 span {
+    font-size: 32px;
+    color: #012f4f;
+    text-transform: uppercase;
+    display: block;
+}
 
+.ensino_infantil .nivel_ensino_title .img_infantil {
+    margin: -20px 60px 0px 0px;
+}
 
+.ensino_infantil .nivel_ensino_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.nivel_ensino_text {
+    display: inline-grid;
+    grid-template-areas: "div div";
+    font-family: "Source Sans Pro";
+    color: #3e3e3e;
+    max-width: 768px;
+}
 
+.nivel_ensino_text .nivel_ensino_left {
+    width: 100%;
+    max-width: 650px;
+    line-height: 24px;
+}
+
+.nivel_ensino_text .nivel_ensino_left p {
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.nivel_ensino_text .nivel_ensino_right {
+    margin-left: 30px;
+}
+
+.nivel_ensino_content .nivel_ensino_cards {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 768px;
+}
+
+.nivel_ensino_cards .card_number_one {
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.nivel_ensino_cards .card_number_two {
+    background-color: lightgoldenrodyellow;
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.nivel_ensino_cards .card_number_tree {
+    background-color: lightpink;
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.section_niveis .nav_niveis {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0082CB;
+    color: #fff;
+    padding: 30px 60px 30px 70px;
+}
+
+.section_niveis .nav_niveis .niveis_title {
+    margin-right: 50px;
+}
+
+.section_niveis .nav_niveis .niveis_title h1 {
+    font-family: "adelle_sans", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.section_niveis .nav_niveis .niveis_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.section_niveis .nav_niveis .niveis_cards img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.section_niveis .nav_niveis .niveis_cards .nivel_card_fundamental1 {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.section_niveis .nav_niveis .niveis_cards .nivel_card_fundamental2 {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.section_niveis .nav_niveis .niveis_cards .nivel_card_medio {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.section_niveis .nav_niveis .niveis_cards .nivel_card_integral {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.section_niveis .nav_niveis .niveis_cards h1 {
+    font-family: 'adelle_sans', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 50%;
+    margin-top: 0;
+}
+
+.section_niveis .nav_niveis .niveis_cards h1 span {
+    font-size: 24px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.section_niveis .nav_niveis .niveis_cards h1 p {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+}
+
+.section_conexoes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px 40px 0px;
+}
+
+.section_conexoes > .container {
+    position: relative;
+}
+
+.section_conexoes .conexoes_title h1 {
+    font-family: 'adelle_sans', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 36px;
+    color: #002D4E;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section_conexoes .container .tns-outer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section_conexoes .tns-outer .bloco {
+    max-height: 450px;
+    max-width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    margin: 5px;
+}
+
+.section_conexoes .container .tns-outer .bloco img {
+    max-width: 270px;
+    width: 100%;
+}
+
+.section_conexoes .container .tns-outer .bloco h1 {
+    font-size: 24px;
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+}
 
 
 
