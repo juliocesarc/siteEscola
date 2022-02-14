@@ -10,11 +10,24 @@
 </head>
 <body>
   <header>
-    <nav></nav>
+    <nav class="menu">
+      <a href="#" class="logo">Logo</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
     <div class="slider">
       <div class="slider--controls">
-        <div class="slider--control" onclick="goPrev()">voltar</div>
-        <div class="slider--control" onclick="goNext()">próxima</div>
+        <div class="slider--control" onclick="goPrev()">&lt</div>
+        <div class="slider--control" onclick="goNext()">&gt</div>
       </div>
       <div class="slider--width">
         <div class="slider--item" style="background-image: url(assets/img/fundo1.jpg);"></div>
