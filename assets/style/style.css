@@ -6,7 +6,9 @@
     --second-color: white;
     --thirdh-color: orange;
 
-
+    /* Font color*/
+    --first-font-color: rgb(153, 153, 153);
+    
     
 }
 
@@ -17,17 +19,71 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*------------------ Header -----------------*/
 
     /*------------------ Nav -----------------*/
-    .nav-bar {
+    nav {
         width: 100%;
+        border-bottom: 1px solid rgba(200, 200, 200, 0.164);
+    }
+
+    .nav-bar {
         height: 3em;
+        margin: auto;
+        display: flex;
+        max-width: 1200px;
+        align-items: center;
+        justify-content: space-between;
         background-color: var(--second-color);
-        border-bottom: 2px solid var();
+    }
+
+    .nav-bar a{
+        color: var(--first-font-color);
+    }
+
+    .nav-bar a:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .nav-items a:hover {
+        border-bottom: 2px solid rgba(255, 166, 0, 0.504);
     }
     /*----------------------------------------*/
 
+    /*------------------ Section 1  -----------------*/
 
+    .slider-header {
+       background: var(--first-color);
+       max-width: 100%;
+       height: calc(100vh - 4em);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .cont {
+        max-width: 1000px;
+        margin: 15px;
+        text-align: center;
+    }
+
+    .cont h1 {
+        margin-bottom: 15px;
+    }
+
+    .cont p {
+        text-align: justify;
+    }
+    /*----------------------------------------*/
 
 /*-------------------------------------------*/
+
+/*------------------ Section 2 (Sobre nós) -----------------*/
+
+
+
+/*----------------------------------------*/
